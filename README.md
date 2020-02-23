@@ -10,12 +10,10 @@ Cheatsheet in case of this following error :
      mkdir /usr/local/var/postgres
      chmod 0700 /usr/local/var/postgres
 
-      Then run initdb and it will respect the permissions of the data directory.
+      #Then run initdb and it will respect the permissions of the data directory.
 
         initdb -D /usr/local/var/postgres
-         create a test db named after your user:
-
-          createdb `whoami`
-  
-           Login to test:
-              psql
+        #create a test db named after your user:
+        createdb `whoami`
+        Login to test:
+           psql
